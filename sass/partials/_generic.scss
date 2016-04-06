@@ -10,3 +10,46 @@
 	padding-left: 100px;
 	padding-right: 20px; 
 }
+
+/*Form Control*/
+.shadow {
+	@include box-shadow(0, 1px, 3px, $shadow, inset);	
+}
+.shadow-text {
+	@include text-shadow(0, 2px, 4px, $shadow);
+}
+.form-control {
+	border-radius: 3px;
+	@extend .shadow;
+	&:hover,
+	&:focus,
+	&:active {
+		@extend .shadow;
+	}
+}
+
+/*Checkbo*/
+input[type="checkbox"] {
+    display:none;
+    + label {
+    	@extend .family-ar;
+    	span {
+		    display: inline-block;
+		    width: 30px;
+		    height: 30px;
+		    margin: -3px 5px 0 0;
+		    vertical-align: middle;
+		    cursor: pointer;
+	    	background-image: url(../img/icons/checkbox-inactive.png);
+	    	background-repeat: no-repeat;
+	    	background-position: center;		    
+    	}
+    }
+    &:checked {
+    	+ label {
+    		span {
+	    		background-image: url(../img/icons/checkbox-active.png);
+    		}
+    	}
+    }
+}

@@ -11,6 +11,7 @@ $family-arial: Arial,Helvetica Neue,Helvetica,sans-serif;
 $family-vd: 'voda-rg';
 $family-vdbd: 'voda-rg-bold';
 $family-vdlt: 'voda-lt';
+$family-icon: 'FontAwesome';
 
 /*Font Sizes*/
 $font-size-h1: 45px;
@@ -32,10 +33,17 @@ $theme-red: #e60000;
 $theme-purple: #9c2aa0;
 $theme-yellow: #fcbe00;
 $theme-dark: #2e2e2e;
+$theme-green: #428600;
+$theme-checkbox: #ebebeb;
 $theme-logo: #ff0e1d; /*not used so far*/
 
 /*Borders*/
 $border-default: #ccc;
 
-/*Effect Ratio*/
+/*Effects*/
 $ratio-darken: 7%;
+$shadow: rgba(0, 0, 0, 0.4);
+
+/*Icons*/ 
+$checkbox-inactive: "\f096";
+$checkbox-active: "\f14a";
