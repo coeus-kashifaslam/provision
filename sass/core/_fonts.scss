@@ -1,0 +1,50 @@
+@font-face {
+  font-family: 'voda-rg';
+  src: url('VodafoneRg-Regular.eot?#iefix') format('embedded-opentype'),  
+	  url('VodafoneRg-Regular.woff') format('woff'), 
+	  url('VodafoneRg-Regular.ttf')  format('truetype'), 
+	  url('VodafoneRg-Regular.svg#VodafoneRg-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'voda-rg-bold';
+  src: url('VodafoneRg-Bold.eot?#iefix') format('embedded-opentype'),  
+	  url('VodafoneRg-Bold.woff') format('woff'), 
+	  url('VodafoneRg-Bold.ttf')  format('truetype'), 
+	  url('VodafoneRg-Bold.svg#VodafoneRg-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'voda-lt';
+  src: url('VodafoneLt-Regular.eot?#iefix') format('embedded-opentype'),  
+	  url('VodafoneLt-Regular.woff') format('woff'), 
+	  url('VodafoneLt-Regular.ttf')  format('truetype'), 
+	  url('VodafoneLt-Regular.svg#VodafoneLt-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.family-vd{
+	font-family: $family-vd;
+	font-weight: normal;
+}
+.family-vdlt{
+	font-family: $family-vdlt;
+	font-weight: normal;
+}
+.family-vdbd{
+	font-family: $family-vdbd;
+	font-weight: normal;
+}
+.family-ar{
+	font-family: $family-arial;
+	font-weight: 400;
+}
+.family-arbd{
+	font-family: $family-arial;
+	font-weight: 700;
+}

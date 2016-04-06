@@ -1,0 +1,69 @@
+/*Buttons Sizes*/
+.default-btn {
+	font-size: $font-size-btn;
+	border-radius: 5px;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	outline: none;
+	white-space: normal;
+	border: 1px solid transparent;
+	@inlucde transition();
+}
+.default-btn-sudo {
+	outline: none;
+	text-decoration: none;
+	border: 1px solid transparent;
+	@inlucde transition();
+}
+.small-btn {
+	font-size: $font-size-small-btn;
+	padding: 10px 15px;
+}
+
+
+
+/*Button Colors*/
+.purple-btn{
+	background-color: $theme-purple;
+	color: $white;
+	border: 1px solid $theme-purple;
+}
+.purple-btn-sudo {
+	background-color: darken($theme-purple, $ratio-darken);
+	color: $white;
+	border: 1px solid darken($theme-purple, $ratio-darken);
+}
+.white-btn{
+	background-color: $white;
+	color: $default-font-color;
+	border: 1px solid $border-default;
+}
+.white-btn-sudo {
+	background-color: $border-default;
+	color: $white;
+	border: 1px solid $border-default; 
+}
+
+
+/*Final Buttons Classess*/
+.primary-btn {
+	@extend .default-btn;
+	@extend .purple-btn;
+	&:hover,
+	&:focus,
+	&:active {
+		@extened .default-btn-sudo;
+		@extened .purple-btn-sudo;
+	}
+}
+.trasparent-btn {
+	@extend .default-btn;
+	@extend .white-btn;
+	&:hover,
+	&:focus,
+	&:active {
+		@extened .default-btn-sudo;
+		@extened .white-btn-sudo;
+	}
+}

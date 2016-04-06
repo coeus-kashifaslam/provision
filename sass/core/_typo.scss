@@ -1,0 +1,35 @@
+body {
+	@extend .family-ar;
+	font-size: $default-font-size;
+	color: $default-font-color;
+}
+
+h1,
+.h1 {
+	font-family: $family-vd;
+	font-size: $font-size-h1;
+	color: $theme-red;
+}
+
+h2, 
+.h2 {
+	font-family: $family-vdlt;
+	font-size: $font-size-h2;
+}
+
+h3,
+.h3 {
+	font-size: $font-size-h3;
+}
+
+h4,
+.h4,
+.lead {
+	font-size: $font-size-h4;
+}
+
+h5,
+.h5,
+.meta {
+	font-size: $font-size-h5;
+}

@@ -1,0 +1,41 @@
+/*Default*/
+$default-font-size: 14px;
+$default-font-color: #333;
+
+/*Font Family*/
+
+/*Arial*/
+$family-arial: Arial,Helvetica Neue,Helvetica,sans-serif;
+
+/*Vodafone*/
+$family-vd: 'voda-rg';
+$family-vdbd: 'voda-rg-bold';
+$family-vdlt: 'voda-lt';
+
+/*Font Sizes*/
+$font-size-h1: 45px;
+$font-size-h2: 30px;
+$font-size-h3: 20px;
+$font-size-h4: 16px;
+$font-size-h5: 12px;
+
+$font-size-lead: $font-size-h4;
+$font-size-small: $font-size-h5;
+$font-size-btn: $font-size-h3;
+$font-size-small-btn: $font-size-h4;
+
+/*Colors*/
+$white: #fff;
+$black: #000;
+
+$theme-red: #e60000;
+$theme-purple: #9c2aa0;
+$theme-yellow: #fcbe00;
+$theme-dark: #2e2e2e;
+$theme-logo: #ff0e1d; /*not used so far*/
+
+/*Borders*/
+$border-default: #ccc;
+
+/*Effect Ratio*/
+$ratio-darken: 7%;
