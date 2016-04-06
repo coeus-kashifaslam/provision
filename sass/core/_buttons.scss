@@ -1,20 +1,24 @@
 /*Buttons Sizes*/
 .default-btn {
+	@extend .family-arbd;
 	font-size: $font-size-btn;
-	border-radius: 5px;
+	border-radius: 4px;
 	padding: 10px 20px;
 	text-align: center;
 	text-decoration: none;
 	outline: none;
 	white-space: normal;
 	border: 1px solid transparent;
-	@inlucde transition();
+	@include transition();
+	.fa {
+		margin-right: 5px;
+	}
 }
 .default-btn-sudo {
 	outline: none;
 	text-decoration: none;
 	border: 1px solid transparent;
-	@inlucde transition();
+	@include transition();
 }
 .small-btn {
 	font-size: $font-size-small-btn;
@@ -53,8 +57,8 @@
 	&:hover,
 	&:focus,
 	&:active {
-		@extened .default-btn-sudo;
-		@extened .purple-btn-sudo;
+		@extend .default-btn-sudo;
+		@extend .purple-btn-sudo;
 	}
 }
 .trasparent-btn {
@@ -63,7 +67,7 @@
 	&:hover,
 	&:focus,
 	&:active {
-		@extened .default-btn-sudo;
-		@extened .white-btn-sudo;
+		@extend .default-btn-sudo;
+		@extend .white-btn-sudo;
 	}
 }
