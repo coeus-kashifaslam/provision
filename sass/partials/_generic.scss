@@ -143,6 +143,10 @@ th {
 		}
 	}
 }
+.dropdown-cover {
+	top: 0;
+}
+
 
 /*Remove Selected filter style*/
 .filter-tag-list {
@@ -347,4 +351,55 @@ a.filter-tag {
 /*Page Title*/
 .theme-page-header {
 	margin-bottom: 50px;
+}
+.user-dropdown {
+	min-width: 160px;
+	margin-bottom: 5px;
+	> a {
+		@extend .family-arbd;
+		color: $default-font-color;
+		@include transition(none);
+		padding: 7px 12px;
+		display: block;
+		.fa {
+			margin-left: 35px;
+		}
+		&:hover,
+		&:focus,
+		&:active {
+			text-decoration: none;
+			color: $default-font-color;
+		}
+	}
+	.dropdown-menu {
+		min-width: 100%;
+		> li {
+			> a {
+				&:hover,
+				&:focus,
+				&:active {
+					background-color: transparent;
+				}
+			}		
+		}		
+	}
+	&.open {
+		> .dropdown-menu {
+			border-top: 0 none;
+		}
+	}
+}
+
+
+
+/*Alert Dropdown*/
+.alert-dropdown {
+	text-align: right;
+	> a {
+		padding: 6px 12px;
+		@include transition(none);
+	}
+	.dropdown-menu {
+		text-align: left;
+	}
 }

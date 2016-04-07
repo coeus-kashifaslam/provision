@@ -12,6 +12,9 @@ body {
 .fa {
 	font-size: $font-size-icon;
 }
+.fa-bell {
+	color: $theme-yellow;
+}
 a {
 	@include transition();
 	&:hover,
