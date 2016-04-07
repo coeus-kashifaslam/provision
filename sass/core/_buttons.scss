@@ -9,9 +9,11 @@
 	outline: none;
 	white-space: normal;
 	border: 1px solid transparent;
+	@include box-shadow (0, 2px, 3px, $shadow);
 	@include transition();
 	.fa {
 		margin-right: 5px;
+		font-size: $font-size-btn;
 	}
 }
 .default-btn-sudo {

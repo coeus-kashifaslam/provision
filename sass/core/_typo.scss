@@ -4,8 +4,10 @@ body {
 	color: $default-font-color;
 }
 
-*:focus {
-	outline: none;
+*, a, button {
+	&:focus {
+		outline: none !important;
+	}
 }
 .fa {
 	font-size: $font-size-icon;

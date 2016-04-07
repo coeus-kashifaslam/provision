@@ -1,0 +1,43 @@
+.table-header {
+	margin-bottom: 30px;
+}
+.table-title {
+	@extend .family-vdlt;
+}
+.table-top-search-wrap {
+	margin-bottom: 15px;
+	.search-input {
+		.form-control {
+			width: 300px;
+			padding-right: 30px;
+		}
+		.form-group {
+			position: relative;
+			&:after {
+				content: $icon-search;
+				font-family: $family-icon;
+				font-size: $font-size-icon;
+				color: $theme-dropdown-icon;
+				position: absolute;
+				right: 10px;
+				top: 5px;
+			}			
+		}
+	}
+	.search-checkbox {
+		margin-top: 5px;
+	}
+}
+
+/*Section Content*/
+.section-content-lg {
+	p {
+		width: 75%;
+		&:last-of-type {
+			margin-bottom: 30px;
+		}
+	}
+	.section-cta {
+		margin-bottom: 60px;
+	}	
+}

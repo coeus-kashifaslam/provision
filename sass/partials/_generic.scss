@@ -1,3 +1,9 @@
+.fleft {
+	float: left;
+}
+.fright {
+	float: right;
+}
 .site-header,
 .site-main,
 .site-footer {
@@ -11,6 +17,12 @@
 	padding-right: 20px; 
 }
 
+.site-main {
+	> .wrap {
+		margin-bottom: 80px;
+	}
+}
+
 /*Form Control*/
 .shadow {
 	@include box-shadow(0, 1px, 3px, $shadow, inset);	
@@ -20,11 +32,14 @@
 }
 .form-control {
 	border-radius: 3px;
+	border-color: $border-default;
 	@extend .shadow;
 	&:hover,
 	&:focus,
 	&:active {
 		@extend .shadow;
+		border-color: $border-default;
+
 	}
 }
 
@@ -60,6 +75,7 @@ input[type="checkbox"] {
 	border-radius: 0 0 5px 5px;
 	border: 1px solid $border-default;
 	margin: 0;
+	box-shadow: none;
 	.dropdown-section {
 		padding: 0 20px;		
 	}
@@ -161,18 +177,60 @@ a.filter-tag {
 
 /*Default Table Styles*/
 .default-table {
+	border-bottom: 2px solid $border-default;
 	> thead {
 		> tr {
 			> th {
 				padding: 0;
 				border-bottom: 2px solid $border-default;
+				.dropdown-menu {
+					padding: 0;
+					> li {
+						&:first-child{
+							padding-top: 20px;
+						}
+						&:last-child {
+							padding-bottom: 20px;
+						}
+					}
+				}
+				.divider {
+					margin: 0;
+					background-color: transparent;
+					padding: 10px 0;
+					position: relative;
+					&:before{
+						content: '';
+						position: absolute;
+						left: 0;
+						right: 0;
+						top: 5px;
+						background-color: $border-default;
+						height: 1px;
+					}
+				}
 			}
 		}
+	}
+	> tbody {
+		> tr {
+			> td {
+				&.exclaimation-sign {
+					padding: 8px 0;					
+				}
+				.fa {
+					color: $theme-dropdown-icon;
+				}
+				.fa-exclamation-circle {
+					color: $theme-red;
+				}								
+			}
+		} 
 	}
 }
 .wide-last-col {
 	> thead,
-	> tbdoy {
+	> tbody {
 		> tr {
 			> th, 
 			> td {
@@ -182,4 +240,111 @@ a.filter-tag {
 			}
 		}
 	}
+}
+
+
+
+/*Table Inner Menu*/
+.context-menu {
+	z-index: 8;
+	right: -5px;
+	top: -5px;
+	border-radius: 5px;
+	> li {
+		> a {
+			&:hover,
+			&:focus,
+			&:active {
+				background-color: transparent;
+			}
+		}		
+	}
+	> .dropdown-toggle-inner {
+		position: absolute;
+		right: -16px;
+		top: 2px;
+	}
+}
+.context-dropdown {
+	float: right;
+	> a {
+		position: relative;
+		border: 0 none;
+		@include transition(none);
+		color: $theme-dropdown-icon;
+		&:hover,&:focus, &:active {
+			border: 0 none;
+			@include transition(none);
+		}
+	}
+	&.open {
+		> a {
+			border: 0 none;
+			color: $theme-dropdown-icon;
+		}
+	}
+}
+
+
+/*Default Tabel pagination*/
+.default-pager {
+	text-align: right;
+	a {
+		color: $theme-dropdown-icon;
+		&:hover,&:focus, &:active {
+			color: $theme-dropdown-icon;
+		}
+		&.inactive {
+			opacity: 0.5;
+			cursor: text;
+		}
+	}
+	> div {
+		text-align: left;
+		display: inline-block;
+		+ div {
+			margin-left: 10px;
+		}
+	}
+}
+.count-setter {
+	.btn-group {
+			border: 1px solid $border-default;
+			border-radius: 5px;
+		.btn {
+			background-color: $white;
+			border: 0 none;
+			&:last-of-type{
+				border-left: 1px solid $border-default;
+			    line-height: 12px;
+			    margin-top: 5px;
+			    padding: 3px 8px;				
+			}
+			&:hover,&:focus,&:active {
+				box-shadow: none;
+				z-index: auto;
+			}			
+		}
+		&.open {
+			.btn {
+				box-shadow: none;
+			}
+		}
+	}
+	.dropdown-menu {
+		padding: 0;
+		min-width: auto;
+		left: 0;
+		right: 0;
+		a {
+			padding: 3px 12px;
+		}
+	}
+}
+
+
+
+/*Page Title*/
+.theme-page-header {
+	margin-bottom: 50px;
 }
