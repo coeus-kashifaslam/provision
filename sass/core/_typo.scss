@@ -7,7 +7,9 @@ body {
 *:focus {
 	outline: none;
 }
-
+.fa {
+	font-size: $font-size-icon;
+}
 a {
 	@include transition();
 	&:hover,

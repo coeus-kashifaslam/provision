@@ -1,7 +1,6 @@
 /*Default*/
 $default-font-size: 14px;
 $default-font-color: #333;
-
 /*Font Family*/
 
 /*Arial*/
@@ -24,6 +23,7 @@ $font-size-lead: $font-size-h4;
 $font-size-small: $font-size-h5;
 $font-size-btn: $font-size-h3;
 $font-size-small-btn: $font-size-h4;
+$font-size-icon: $font-size-h4;
 
 /*Colors*/
 $white: #fff;
@@ -36,6 +36,7 @@ $theme-dark: #2e2e2e;
 $theme-green: #428600;
 $theme-checkbox: #ebebeb;
 $theme-logo: #ff0e1d; /*not used so far*/
+$theme-dropdown-icon: #666666;
 
 /*Borders*/
 $border-default: #ccc;
@@ -45,5 +46,4 @@ $ratio-darken: 7%;
 $shadow: rgba(0, 0, 0, 0.4);
 
 /*Icons*/ 
-$checkbox-inactive: "\f096";
-$checkbox-active: "\f14a";
+$icon-close: "\f00d";

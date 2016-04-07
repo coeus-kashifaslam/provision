@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
  * Bootstrap v3.3.6 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
@@ -12964,13 +12965,14 @@ button.close {
 }
 
 /* line 43, ../sass/core/_fonts.scss */
-.family-ar, body, input[type="checkbox"] + label, .links-widget a {
+.family-ar, body, input[type="checkbox"] + label, .dropdown-menu label,
+.dropdown-menu a, .links-widget a {
   font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
   font-weight: 400;
 }
 
 /* line 47, ../sass/core/_fonts.scss */
-.family-arbd, .default-btn, .primary-btn, .trasparent-btn, .links-widget .widget-title, .links-widget .widget-more {
+.family-arbd, .default-btn, .primary-btn, .trasparent-btn, th > a, th.dropdown > a, .links-widget .widget-title, .links-widget .widget-more {
   font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
   font-weight: 700;
 }
@@ -12986,7 +12988,12 @@ body {
   outline: none;
 }
 
-/* line 11, ../sass/core/_typo.scss */
+/* line 10, ../sass/core/_typo.scss */
+.fa {
+  font-size: 16px;
+}
+
+/* line 13, ../sass/core/_typo.scss */
 a {
   -webkit-transition: all 0.3s ease-in-out 0s;
   -khtml-transition: all 0.3s ease-in-out 0s;
@@ -12995,7 +13002,7 @@ a {
   -o-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
 }
-/* line 13, ../sass/core/_typo.scss */
+/* line 15, ../sass/core/_typo.scss */
 a:hover, a:focus, a:active {
   -webkit-transition: all 0.3s ease-in-out 0s;
   -khtml-transition: all 0.3s ease-in-out 0s;
@@ -13005,7 +13012,7 @@ a:hover, a:focus, a:active {
   transition: all 0.3s ease-in-out 0s;
 }
 
-/* line 20, ../sass/core/_typo.scss */
+/* line 22, ../sass/core/_typo.scss */
 h1, .h1,
 h2, .h2,
 h3, .h3,
@@ -13014,7 +13021,7 @@ h5, .h5 {
   margin-top: 0;
 }
 
-/* line 28, ../sass/core/_typo.scss */
+/* line 30, ../sass/core/_typo.scss */
 h1,
 .h1 {
   font-family: "voda-rg";
@@ -13022,27 +13029,27 @@ h1,
   color: #e60000;
 }
 
-/* line 35, ../sass/core/_typo.scss */
+/* line 37, ../sass/core/_typo.scss */
 h2,
 .h2 {
   font-family: "voda-lt";
   font-size: 30px;
 }
 
-/* line 41, ../sass/core/_typo.scss */
+/* line 43, ../sass/core/_typo.scss */
 h3,
 .h3 {
   font-size: 20px;
 }
 
-/* line 46, ../sass/core/_typo.scss */
+/* line 48, ../sass/core/_typo.scss */
 h4,
 .h4,
 .lead {
   font-size: 16px;
 }
 
-/* line 52, ../sass/core/_typo.scss */
+/* line 54, ../sass/core/_typo.scss */
 h5,
 .h5,
 .meta,
@@ -13167,18 +13174,140 @@ input[type="checkbox"] {
 /* line 36, ../sass/partials/_generic.scss */
 input[type="checkbox"] + label span {
   display: inline-block;
-  width: 30px;
+  width: 25px;
   height: 30px;
   margin: -3px 5px 0 0;
   vertical-align: middle;
   cursor: pointer;
   background-image: url(../img/icons/checkbox-inactive.png);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: left center;
 }
 /* line 50, ../sass/partials/_generic.scss */
 input[type="checkbox"]:checked + label span {
   background-image: url(../img/icons/checkbox-active.png);
+}
+
+/*Dropdown Menu Styles*/
+/* line 58, ../sass/partials/_generic.scss */
+.dropdown-menu {
+  padding: 15px 0;
+  border-radius: 0 0 5px 5px;
+  border: 1px solid #ccc;
+  margin: 0;
+}
+/* line 63, ../sass/partials/_generic.scss */
+.dropdown-menu .dropdown-section {
+  padding: 0 20px;
+}
+/* line 66, ../sass/partials/_generic.scss */
+.dropdown-menu label,
+.dropdown-menu a {
+  color: #333;
+  font-size: 12px;
+  line-height: 28px;
+}
+/* line 74, ../sass/partials/_generic.scss */
+.dropdown-menu a:hover, .dropdown-menu a:focus, .dropdown-menu a:active {
+  color: #333;
+  text-decoration: none;
+}
+/* line 80, ../sass/partials/_generic.scss */
+.dropdown-menu a:before {
+  color: #666666;
+}
+
+/* line 87, ../sass/partials/_generic.scss */
+th > a, th.dropdown > a {
+  transition: none;
+  color: #333;
+  padding: 8px;
+  padding-bottom: 10px;
+  display: block;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+  margin-bottom: -2px;
+}
+/* line 97, ../sass/partials/_generic.scss */
+th > a .fa, th.dropdown > a .fa {
+  float: right;
+  margin-top: 3px;
+}
+/* line 101, ../sass/partials/_generic.scss */
+th > a:hover, th > a:focus, th > a:active, th.dropdown > a:hover, th.dropdown > a:focus, th.dropdown > a:active {
+  color: #333;
+  text-decoration: none;
+  outline: none;
+}
+/* line 109, ../sass/partials/_generic.scss */
+th .form-group, th.dropdown .form-group {
+  margin-bottom: 0;
+}
+/* line 112, ../sass/partials/_generic.scss */
+th .dropdown-menu, th.dropdown .dropdown-menu {
+  right: 0;
+  /*min-width: auto;*/
+}
+
+/* line 119, ../sass/partials/_generic.scss */
+.dropdown > a {
+  border: 1px solid #fff;
+  border-bottom-color: transparent;
+}
+/* line 124, ../sass/partials/_generic.scss */
+.dropdown.open > a {
+  border: 1px solid #ccc;
+  border-radius: 5px 5px 0 0;
+}
+
+/*Remove Selected filter style*/
+/* line 132, ../sass/partials/_generic.scss */
+.filter-tag-list {
+  margin-left: 0;
+}
+/* line 134, ../sass/partials/_generic.scss */
+.filter-tag-list li {
+  padding: 0;
+  margin-right: 15px;
+  margin-bottom: 5px;
+}
+
+/* line 140, ../sass/partials/_generic.scss */
+.filter-tag-list a,
+a.filter-tag {
+  position: relative;
+  padding-left: 30px;
+}
+/* line 144, ../sass/partials/_generic.scss */
+.filter-tag-list a:before,
+a.filter-tag:before {
+  content: "";
+  font-family: "FontAwesome";
+  font-size: 16px;
+  position: absolute;
+  left: 0;
+  top: -8px;
+}
+
+/*Sort Order List*/
+/* line 156, ../sass/partials/_generic.scss */
+.sort-order-list .fa {
+  margin-right: 10px;
+}
+
+/*Default Table Styles*/
+/* line 166, ../sass/partials/_generic.scss */
+.default-table > thead > tr > th {
+  padding: 0;
+  border-bottom: 2px solid #ccc;
+}
+
+/* line 179, ../sass/partials/_generic.scss */
+.wide-last-col > thead > tr > th:last-child,
+.wide-last-col > thead > tr > td:last-child,
+.wide-last-col > tbdoy > tr > th:last-child,
+.wide-last-col > tbdoy > tr > td:last-child {
+  width: 300px;
 }
 
 /* line 1, ../sass/partials/_footer.scss */
