@@ -19,10 +19,12 @@
 .dropdown-menu > .active > label,
 .dropdown-menu > .active > label:hover,
 .dropdown-menu > .active > label:focus {
-  color: #ffffff;
+  /*color: #ffffff;*/
+  color: $default-font-color;
   text-decoration: none;
   outline: 0;
-  background-color: #428bca;
+/*  background-color: #428bca;*/
+  background-color: $theme-hover-bg;
 }
 .dropdown-menu > li > input[disabled] ~ label,
 .dropdown-menu > li > input[disabled] ~ label:hover,

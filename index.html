@@ -29,7 +29,7 @@
 
 					<div class='dropdown user-dropdown'>
 			        	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Anton Antrager <i class="fa fa-chevron-down"></i></a>
-			        	<ul class="dropdown-menu dropdown-menu-right"  data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+			        	<ul class="dropdown-menu dropdown-menu-right">
 					        <li>
 					        	<a href="#">Passwort ändern</a>
 					        </li>	
@@ -295,14 +295,16 @@
 					<div class="count-setter">
 						<span>Zeige </span>
 						<span>
-							<div class="btn-group">
-							  <button type="button" class="btn dropdown-toggle">33</button>
-							  <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<div class="btn-group btn-select">
+							  <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">15</button>
+							  <button type="button" class="btn dropdown-toggle btn-icon">
 							    <i class="fa fa-caret-down"></i>
 							  </button>
-							  <ul class="dropdown-menu">
-							    <li><a href="#">1</a></li>
-							    <li><a href="#">100</a></li>
+							  <ul class="dropdown-menu noclose">
+							    <li><input type="radio" id="15" name="NAME" value="VALUE"><label for="15">15</label></li>
+							    <li><input type="radio" id="30" name="NAME" value="VALUE"><label for="30">30</label></li>
+							    <li><input type="radio" id="45" name="NAME" value="VALUE"><label for="45">45</label></li>
+							    <li><input type="radio" id="60" name="NAME" value="VALUE"><label for="60">60</label></li>							    
 							  </ul>
 							</div>						
 						</span>

@@ -324,9 +324,7 @@ a.filter-tag {
 .count-setter {
 	.btn-group {
 			border: 1px solid $border-default;
-			border-radius: 5px;
 		.btn {
-			background-color: $white;
 			border: 0 none;
 			&:last-of-type{
 				border-left: 1px solid $border-default;
@@ -336,7 +334,7 @@ a.filter-tag {
 			}
 			&:hover,&:focus,&:active {
 				box-shadow: none;
-				z-index: auto;
+				/*z-index: auto;*/
 			}			
 		}
 		&.open {
@@ -349,7 +347,6 @@ a.filter-tag {
 		padding: 0;
 		min-width: auto;
 		left: 0;
-		right: 0;
 		a {
 			padding: 3px 12px;
 		}
