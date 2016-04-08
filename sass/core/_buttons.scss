@@ -78,23 +78,6 @@
 /*Select Buttons*/
 .btn-select {
 	border-radius: 5px;
-	> .btn {
-		background-color: transparent;
-		&:first-child {
-			z-index: 9;
-			padding-right: 35px;
-		}
-		&:hover,
-		&:focus,
-		&:active {
-			background-color: transparent;
-		}		
-	}
-	.btn-icon {
-		position: absolute;
-		right: 0;
-		top: 0;
-	}
 	.dropdown-menu {
 		right: -1px;
 		label {
