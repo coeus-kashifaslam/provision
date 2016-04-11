@@ -1,0 +1,30 @@
+.ticket-thumbnail {
+	border: 0 none;
+	box-shadow: 0 none;
+	padding: 0;	
+	a {		
+		display: inline-block;
+		color: $default-font-color;
+		&:hover,
+		&:focus,
+		&:active {
+			color: $default-font-color;
+			text-decoration: none;
+			outline: none;
+		}
+	}
+	.fa {
+		font-size: 100px;
+	}
+	.thumbnail-caption { 
+		width: 165px;
+	}	
+	.thumnail-media {
+		padding: 15px;
+		border: 1px solid $border-default;
+		border-radius: 5px;
+		display: inline-block;
+		margin-bottom: 10px;
+		@include default-box-shadow();
+	}
+}
