@@ -18,6 +18,7 @@
 }
 .site-header {
 	position: relative;
+	min-height: 110px;
 	.site-logo{
 		position: absolute;
 		left: 0;
@@ -459,3 +460,20 @@ a.filter-tag {
 		}
 	}	
 }
+
+/*Content Header*/
+.content-header {
+	margin-bottom: 30px;
+}
+.content-title {
+	@extend .family-vdlt;
+}
+.page-content {
+	.content-header {
+		margin-bottom: 50px;
+	}
+}
+
+
+
+/*Thumbnail*/

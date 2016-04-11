@@ -386,3 +386,9 @@
 @mixin animation($str) {
   @include css3-prefix('animation', $str);
 }
+
+
+
+@mixin default-box-shadow() {
+  @include box-shadow($default-box-shadow-x, $default-box-shadow-y, $default-box-shadow-blur, $shadow);
+}
