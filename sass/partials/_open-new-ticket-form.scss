@@ -1,0 +1,148 @@
+.temp-page-ticket-form {
+	.form-section-padded {
+		&:first-of-type {
+			padding-top: 0;
+		}
+	}
+}
+.form-section-padded {
+	padding: 50px 250px 35px 0;
+	border-bottom: 1px solid $border-default;
+	.form-label {
+		margin-bottom: 5px;
+	}
+	&.first {
+		padding-top: 30px;
+	}
+}
+.form-group,
+.form-group-padded {
+	position: relative;
+	.btn-select {
+		display: block;
+		float: none;
+		width: 100%;
+		border-radius: 3px;
+		> .btn {
+			&:first-child {
+				z-index: 9;
+				display: block;
+				width: 100%;
+				text-align: left;
+				float: none;
+			}
+			&:last-of-type {
+				float: none;
+				position: absolute;
+				right: 0;
+				top: 0;
+				z-index: 99;
+			}
+		}
+	}	
+}
+.form-group-padded {
+	padding-left: 45px;
+}
+label,
+p {
+	.required {
+		color: $theme-orange;
+	}
+}
+.element-fixed-container {
+	position: relative;
+}
+.element-fixed {
+	position: absolute;
+	z-index: 999;
+	cursor: pointer;
+}
+.element-fixed-btn{
+	right: -50px;
+	bottom: 0;
+}
+.element-fixed-calendar{
+	right: -20px;
+	bottom: 7px;
+}
+.element-fixed-info {
+	right: -10px;
+	bottom: 5px;
+	z-index: 9999;
+	font-size: $font-size-h3;
+	.fa {
+		color: $theme-orange;
+	}
+	.btn-group {
+		&, &.open {
+			> a {
+				&,
+				&:hover,
+				&:focus,
+				&:active  {
+					background-color: transparent;
+					box-shadow: none;
+				}
+			}
+		}
+	}
+	.dropdown-menu {
+		min-width: 300px;
+		padding: 15px;
+		border-radius: 5px;
+	}
+	.dropdown-menu.bullet.pull-middle {
+		background-color: $theme-transparent-orange;
+		border: 1px solid $theme-orange;
+		&:before {
+			border-right-color: $theme-orange;
+		}
+	}
+	.dropdown-menu.bullet.pull-middle.pull-right::after {
+		border-right-color: $theme-transparent-orange;
+	}
+}
+.tooltip-content {
+	background-color: $theme-transparent-orange;
+	border: 1px solid $theme-orange;
+}
+
+.calender-elements-list {
+	margin-left: 0;
+	.form-control {
+		width: 100px;
+	}
+	li {
+		vertical-align: middle;
+		padding-left: 0;
+		padding-right: 0;
+		&:nth-child(3) {
+			margin-left: 40px;
+		}
+	}
+	
+}
+.form-group {
+	.form-textarea {
+		height: 100px;
+	}
+	div.form-textarea {
+		box-shadow: none;
+		height: 140px;
+		border: 3px dashed $border-default;
+	}	
+	.field-hidden {
+		display: none;
+	}	
+}
+
+.form-actions-list {
+	text-align: right;
+	padding-top: 15px;
+	padding-bottom: 50px;
+	&.form-section-padded {
+		padding: 15px 250px 15px 0;
+		border-bottom: 0 none;
+	}
+}

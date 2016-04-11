@@ -4,4 +4,9 @@ $(document).ready(function(){
 		$this1 = $(this);
 		$this1.closest('.dropdown').find('.dropdown-menu').toggleClass('alert-open');
 	});
+
+	$('.type-file-toggler').on('click', function(e){
+		e.preventDefault();
+		$(this).closest('.form-group').find('.drag-file').click();
+	})
 });
