@@ -14372,3 +14372,8 @@ p .required {
   padding: 15px 250px 15px 0;
   border-bottom: 0 none;
 }
+
+/* line 1, ../sass/partials/_ticket-preview.scss */
+.definition-list-item {
+  margin-bottom: 10px;
+}
