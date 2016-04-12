@@ -471,31 +471,26 @@ a.filter-tag {
 		font-family: $family-icon;
 	}
 }
-.icon-md {
-	&:after,
-	&:before {
-		font-size: $font-size-icon;
-	}
+.icon-lg,
+.icon-md, 
+.icon-sm {
 	&.icon-left {
-		padding-left: 20px;
 		&:before {
 			left: 0;
 		}
 		&:after {
 			display: none;
 		}
-	} 
-	&.icon-right {
-		padding-right: 20px;
+	}
+	&.icon-right{
 		&:after {
 			right: 0;
 		}
 		&:before {
 			display: none;
 		}
-	}	
-} 
-
+	}
+}
 .icon-lg {
 	&:after,
 	&:before {
@@ -504,23 +499,36 @@ a.filter-tag {
 	}
 	&.icon-left {
 		padding-left: 25px;
-		&:before {
-			left: 0;
-		}
-		&:after {
-			display: none;
-		}
 	} 
 	&.icon-right {
 		padding-right: 25px;
-		&:after {
-			right: 0;
-		}
-		&:before {
-			display: none;
-		}
 	}	
 }
+.icon-md {
+	&:after,
+	&:before {
+		font-size: $font-size-icon;
+	}
+	&.icon-left {
+		padding-left: 20px;
+	} 
+	&.icon-right {
+		padding-right: 20px;
+	}	
+}
+.icon-sm {
+	&:after,
+	&:before {
+		font-size: $font-size-small;
+		top: -1px;
+	}
+	&.icon-left {
+		padding-left: 10px;
+	} 
+	&.icon-right {
+		padding-right: 10px;
+	}	
+} 
 .icon-file {
 	&:before,
 	&:after {
@@ -532,4 +540,77 @@ a.filter-tag {
 	&:after{
 		content: $icon-excel-o;
 	}
+}
+.icon-caret-right {
+	&:before,
+	&:after {
+		content: $icon-caret-right;
+	}
+}
+
+
+
+
+
+/*Accordion Styling*/
+
+.panel-group {
+	.panel {
+		border: 0 none;
+		margin-bottom: 30px;
+	}
+}
+.panel-default {
+	> .panel-heading {
+		border: 1px solid $border-default;
+		@include border-radius(5px);
+		@include default-box-shadow();
+		padding: 0;
+		.panel-title {
+			> a {
+				padding: 10px 20px;
+				display: block;
+				position: relative;
+				@extend .family-arbd;
+				&:hover,
+				&:focus,
+				&:active {
+					text-decoration: none;
+					outline: none;
+				}
+				&:after {
+					content: $icon-chevron;
+					font-family: $family-icon;
+					font-size: $font-size-small;
+					color: $theme-dropdown-icon;
+					position: absolute;
+					right: 20px;
+					top: 12px;
+					@include transition();
+				}
+			}
+		}
+
+		+ .panel-collapse {
+			> .panel-body {
+				border: 1px solid $border-default;
+				border-top: 0 none;
+				padding: 20px;
+				@include border-radius-separate(0, 0, 5px, 5px);
+				@include default-box-shadow();
+			}
+		}
+	}
+	&.open-collapse{
+		> .panel-heading {
+			.panel-title {
+				> a {
+					&:after{
+						@include rotate(-180);
+						@include transition();
+					}
+				}
+			}
+		}
+	}	
 }

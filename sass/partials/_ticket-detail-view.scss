@@ -1,0 +1,12 @@
+.content-footer {
+	.link {
+		color: $default-font-color;
+		&:hover,
+		&:focus,
+		&:active {
+			color: $default-font-color;
+			text-decoration: none;
+			outline: none;
+		}
+	}
+}	
