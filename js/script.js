@@ -8,5 +8,10 @@ $(document).ready(function(){
 	$('.type-file-toggler').on('click', function(e){
 		e.preventDefault();
 		$(this).closest('.form-group').find('.drag-file').click();
+	});
+
+	$('a[data-toggle="collapse"]').on('click', function(){
+		$this2 = $(this);
+		$this2.closest('.panel-default').toggleClass('open-collapse');
 	})
 });
