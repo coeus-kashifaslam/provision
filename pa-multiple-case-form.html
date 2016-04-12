@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0">
+    <title>Provision - Dashboard</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+	
+	<header id="site-header" class='site-header'>
+		<div class="site-logo">
+			<img src="img/logo.png" alt="Logo Is not Available">
+		</div>		
+		<div class="wrap">
+			<div class="user-nav clearfix">
+				<div class="user-nav-section fright">
+
+					<div class='dropdown user-dropdown'>
+			        	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Anton Antrager <i class="fa fa-chevron-down"></i></a>
+			        	<ul class="dropdown-menu dropdown-menu-right">
+					        <li>
+					        	<a href="#">Passwort ändern</a>
+					        </li>	
+			        		<li>
+			        			<a href="#">Abmelden</a>
+			        		</li>					        
+					    </ul>
+					</div>
+					<!-- /.user dropdown -->
+
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- #site-header -->
+
+	<main id="site-main" class='site-main'>
+		<div class="wrap">
+			<div class="theme-page-header">
+				<h1 class="theme-page-title">Einzelreklamation</h1>
+			</div>
+
+			<div class="section-content section-content-lg">
+				<p>Verwenden Sie für Mehrfachreklamationen bitte unsere Excel-Vorlage. Füllen Sie die Vorlage vollständig aus und laden sie diese anschließend über untenstehendes Feld „Dateianhänge“ hoch.</p>
+				<div class="section-cta cta-link">
+					<a href="#" class="bg-icon icon-left icon-lg icon-excel">Vorlage-Mehrfachreklamation-Fachhandel herunterladen</a>
+				</div>
+			</div>			
+
+			<div class="page-content">
+				<div class="content-wrap temp-fh-multiCase-ticket-form">
+					<div class="row">
+						<div class="col-xs-6 form-group instruction">
+							<p><span class='required'>*</span> Pflichteld</p>
+						</div>
+						<div class="form-section-padded first">
+							<div class="col-xs-6 form-group">
+								<label class="form-label" for=''>Händlername</label>
+								<input type="text" class='form-control type-hidden' value="Mobil unterwegs - Anton Antragsteller GmbH">
+							</div>
+							<div class="col-xs-6 form-group form-group-padded">
+								<label class="form-label" for=''>Vertriebsbeauftragter</label>
+								<input type="text" class='form-control type-hidden' value="Marianne Prinz">
+							</div>
+							<div class="col-xs-6 form-group">
+								<label class="form-label" for=''>Auszahlungs-VO-ID <span class="required">*</span></label>
+								<input type="text" class='form-control'>
+							</div>
+							<div class="col-xs-6 form-group form-group-padded">
+								<label class="form-label" for=''>Reklamationsgrund <span class="required">*</span></label>
+								<div class="btn-group btn-select">
+							  		<button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-label-placement>Hardware-Rabatte</button>
+							  		<button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							    		<i class="fa fa-caret-down"></i>
+							  		</button>
+							  		<ul class="dropdown-menu">
+							    		<li><input type="radio" id="15" name="NAME" value="VALUE"><label for="15">Hardware-Rabatte 1</label></li>
+							    		<li><input type="radio" id="30" name="NAME" value="VALUE"><label for="30">Hardware-Rabatte 2</label></li>
+							    		<li><input type="radio" id="45" name="NAME" value="VALUE"><label for="45">Hardware-Rabatte 3</label></li>
+							    		<li><input type="radio" id="60" name="NAME" value="VALUE"><label for="60">Hardware-Rabatte 4</label></li>							    
+							  		</ul>
+								</div>
+							</div>							
+							<div class="clearfix"></div>
+						</div>
+						<!-- /.form-section-padded -->
+
+						<div class="form-section-padded">
+							<div class="col-xs-6 form-group">
+								<label class="form-label" for=''>Rufnummer/ARC-Nr./WebOrderID <span class="required">*</span></label>
+								<input type="text" class='form-control'>
+								<div class="element-fixed element-fixed-right element-fixed-info tooltip-element">
+									<div class="btn-group">
+						                <a class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-info-circle"></i></a>
+						                <div class="dropdown-menu bullet pull-middle pull-right">
+						                	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate quidem quaerat, deserunt possimus eligendi voluptatum, ab suscipit harum magni ut quasi at placeat veniam exercitationem debitis fuga sequi natus ullam.</p>
+						                </div>
+						             </div>
+								</div>
+							</div>
+							<div class="col-xs-6 form-group form-group-padded calender-input">
+								<label class="form-label" for=''>Abrechnungszeitraum <span class="required">*</span></label>
+								<ul class="list-inline calender-elements-list">
+									<li><span>Von</span></li>
+									<li class='element-fixed-container'>
+										<input type="text" class='form-control' placeholder='TT.MM.JJJ'>
+										<div class="element-fixed element-fixed-right element-fixed-calendar">
+											<a href="#"><i class="fa fa-calendar"></i></a>
+										</div>
+									</li>
+									<li><span>Bis</span></li>
+									<li class='element-fixed-container'>
+										<input type="text" class='form-control' placeholder='TT.MM.JJJ'>
+										<div class="element-fixed element-fixed-right element-fixed-calendar">
+											<a href="#"><i class="fa fa-calendar"></i></a>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="col-xs-6 form-group">
+								<label class="form-label" for=''>Beschreibung <span class="required">*</span></label>
+								<textarea type="text" class='form-control form-textarea'></textarea>
+							</div>
+							<div class="col-xs-6 form-group form-group-padded">
+								<label class="form-label" for=''>Dateianhänge</label>
+								<a href="#"><div class="form-control form-textarea type-file-toggler"></div></a>
+								<input type="file" class='drag-file field-hidden'>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						<div class="form-actions-list form-section-padded">
+							<ul class="list-inline">
+								<li><button class='trasparent-btn small-btn'>Abbrechen</button></li>
+								<li><button class='primary-btn small-btn'>Vorschau</button></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>				
+			
+		</div>
+	</main>
+	<!-- #site-main -->
+
+
+	<footer id="site-footer" class='site-footer'>
+		<div class="wrap">
+			<div class="footer-cols row clearfix">
+				<div class="col-xs-3 footer-col-l1">
+					<div class="widget links-widget">
+						<header class='widget-header'>
+							<h4 class="widget-title">Footer Headline lorem</h4>
+						</header>
+						<div class="widget-body">
+							<ul class="list-unstyled">
+								<li><a href="#">Footerlink lorem</a></li>
+								<li><a href="#">Footerlink lorem</a></li>
+								<li><a href="#">Footerlink lorem</a></li>
+								<li><a href="#">Footerlink lorem</a></li>
+								<li><a href="#" class='widget-more'>More</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-3 footer-col-l1">
+					<div class="widget links-widget">
+						<header class='widget-header'>
+							<h4 class="widget-title">Footer Headline lorem</h4>
+						</header>
+						<div class="widget-body">
+							<ul class="list-unstyled">
+								<li><a href="#">Footerlink lorem</a></li>
+								<li><a href="#">Footerlink lorem</a></li>
+								<li><a href="#">Footerlink lorem</a></li>
+								<li><a href="#">Footerlink lorem</a></li>
+								<li><a href="#" class='widget-more'>More</a></li>
+							</ul>
+						</div>
+					</div>					
+				</div>
+				<div class="col-xs-3 footer-col-l1">
+					<div class="widget links-widget">
+						<header class='widget-header'>
+							<h4 class="widget-title">Footer Headline lorem</h4>
+						</header>
+						<div class="widget-body">
+							<ul class="list-unstyled">
+								<li><a href="#">Footerlink lorem</a></li>
+								<li><a href="#">Footerlink lorem</a></li>
+								<li><a href="#">Footerlink lorem</a></li>
+								<li><a href="#">Footerlink lorem</a></li>
+								<li><a href="#" class='widget-more'>More</a></li>
+							</ul>
+						</div>
+					</div>					
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- #site-footer -->
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/dropdowns-enhancement.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

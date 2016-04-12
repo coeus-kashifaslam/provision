@@ -1,3 +1,6 @@
+.no-border-bottom {
+	border-bottom: 0 none !important;
+}
 .fleft {
 	float: left;
 }
@@ -459,3 +462,74 @@ a.filter-tag {
 
 
 /*Thumbnail*/
+.bg-icon {
+	position: relative;
+	&:before,
+	&:after {
+		position: absolute;
+		top: -1px;
+		font-family: $family-icon;
+	}
+}
+.icon-md {
+	&:after,
+	&:before {
+		font-size: $font-size-icon;
+	}
+	&.icon-left {
+		padding-left: 20px;
+		&:before {
+			left: 0;
+		}
+		&:after {
+			display: none;
+		}
+	} 
+	&.icon-right {
+		padding-right: 20px;
+		&:after {
+			right: 0;
+		}
+		&:before {
+			display: none;
+		}
+	}	
+} 
+
+.icon-lg {
+	&:after,
+	&:before {
+		font-size: $font-size-btn;
+		top: -5px;
+	}
+	&.icon-left {
+		padding-left: 25px;
+		&:before {
+			left: 0;
+		}
+		&:after {
+			display: none;
+		}
+	} 
+	&.icon-right {
+		padding-right: 25px;
+		&:after {
+			right: 0;
+		}
+		&:before {
+			display: none;
+		}
+	}	
+}
+.icon-file {
+	&:before,
+	&:after {
+		content: $icon-file-o;
+	}
+}
+.icon-excel {
+	&:before,
+	&:after{
+		content: $icon-excel-o;
+	}
+}
