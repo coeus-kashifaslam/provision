@@ -90,7 +90,8 @@ input[type="checkbox"] {
 	    	background-position: left center;		    
     	}
     }
-    &:checked {
+    &:checked,
+    &[checked='checked'] {
     	+ label {
     		span {
 	    		background-image: url(../img/icons/checkbox-active.png);
