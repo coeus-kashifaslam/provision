@@ -35,3 +35,62 @@
 		margin-bottom: 60px;
 	}	
 }
+
+
+/*Agent Home Page Table*/
+.agent-table {
+	thead {
+		tr {
+			th {
+				&.dropdown {
+					> a {
+						border: 0 none;
+						padding: 8px 5px 10px;
+						.fa {
+							float: none;
+						}
+					}
+				}
+				&:nth-child(1) {
+					width: 30px;
+				}
+				&:nth-child(2) {
+					width: 45px;
+				}
+				&:nth-child(3) {
+					width: 165px;
+				}
+				&:nth-child(4){
+					width: 75px;
+				}
+				&:nth-child(5) {
+					width: 75px;
+				}
+				&:nth-child(6) {
+					width: 90px;
+				}
+				&:nth-child(7) {
+					width: 95px;
+				}
+				&:nth-child(8) {
+					width: 130px;
+				}				
+				&:nth-child(10) {
+					width: 125px;
+				}
+			}
+		}
+	}
+	tbody {
+		tr {
+			td {
+				&:nth-child(3){
+					a {
+						text-decoration: underline;
+						color: $default-font-color;
+					}
+				}
+			}
+		}
+	}
+}

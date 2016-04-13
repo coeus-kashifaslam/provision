@@ -1,3 +1,6 @@
+.padding-top-0 {
+	padding-top: 0 !important;
+}
 .content-footer {
 	.link {
 		color: $default-font-color;
@@ -10,3 +13,14 @@
 		}
 	}
 }	
+
+.info-section-title {
+	font-size: $default-font-size;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.active-query {
+	margin-top: -30px;
+	margin-bottom: 25px;
+}

@@ -39,7 +39,6 @@
 					    </ul>
 					</div>
 					<!-- /.user dropdown -->
-
 					<div class="dropdown alert-dropdown">
 			        	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bell"></i></a>
 			        	<div class="dropdown-menu dropdown-menu-right">
@@ -63,6 +62,9 @@
 					    </div>						
 					</div>
 					<!-- /.alert-dropdown -->
+					 <div class="icon-link link-to-reporting">
+					 	<a href="#"><i class="fa fa-bar-chart"></i></a>
+					 </div>					
 
 				</div>
 			</div>
@@ -78,7 +80,6 @@
 			<div class="section-content section-content-lg">
 				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
 				<div class="section-cta">
-					<button class='primary-btn'><i class="fa fa-file-text-o"></i> Neue Reklamation erstellen</button>
 				</div>
 			</div>
 			<div class="table-top">
@@ -94,7 +95,25 @@
 								<li>
 									<div class="form-group">
 										<input type="checkbox" id='ch5'>
-										<label for="ch5"><span></span> Nur offene anzeigen</label>
+										<label for="ch5"><span></span> Nur offene</label>
+									</div>
+								</li>
+								<li>
+									<div class="form-group">
+										<input type="checkbox" id='ch10'>
+										<label for="ch10"><span></span> Nur mir zugewiesene</label>
+									</div>
+								</li>
+								<li>
+									<div class="form-group">
+										<input type="checkbox" id='ch11'>
+										<label for="ch11"><span></span> Fachhandel</label>
+									</div>
+								</li>
+								<li>
+									<div class="form-group">
+										<input type="checkbox" id='ch12'>
+										<label for="ch12"><span></span> Partneragenturen</label>
 									</div>
 								</li>
 							</ul>
@@ -108,8 +127,15 @@
 					<form action="">	
 				</div>
 			</div>
+			<!-- <select name="" id="">
+				<option value="">option1</option>
+				<option value="">option2SD DS DG SDG SDG SDG </option>
+				<option value="">option3</option>
+				<option value="">option4</option>
+				<option value="">option5</option>
+			</select> -->
 			<div class="default-table-wrap">
-				<table class="table default-table wide-last-col">
+				<table class="table default-table agent-table">
 					<thead>
 						<tr>
 							<th></th>
@@ -132,6 +158,64 @@
 							</th>
 							<th class='dropdown'>
 					        	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Reklamationsgrund <i class="fa fa-caret-down"></i></a>
+					        	<ul class="dropdown-menu noclose">
+							        <li class='dropdown-section dropdown-section__sort-order'>
+							        	<ul class="list-unstyled sort-order-list">
+							        		<li>
+							        			<a href="#"><i class="fa fa-sort-alpha-asc"></i> A-Z</a>
+							        		</li>
+							        		<li>
+							        			<a href="#"><i class="fa fa-sort-alpha-desc"></i> Z-A</a>
+							        		</li>
+							        	</ul>
+							        </li>
+							        <!-- /.dropdown-section -->
+							        <li role="separator" class="divider"></li>
+							        <li class='dropdown-section dropdown-section__filters-list'>
+							        	<ul class="list-unstyled">
+							        		<li>
+							        			<div class="form-group">
+							        				<input type="checkbox" id="ch1">
+							        				<label for="ch1"><span></span> Checkbox Text</label>
+							        			</div>
+							        		</li>
+							        	</ul>
+							        </li>
+							        <!-- /.dropdown-section -->
+							    </ul>
+							    <!-- /.dropdown-menu Inside table header -->
+							</th>
+							<th class='dropdown'>
+					        	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Von <i class="fa fa-caret-down"></i></a>
+					        	<ul class="dropdown-menu noclose">
+							        <li class='dropdown-section dropdown-section__sort-order'>
+							        	<ul class="list-unstyled sort-order-list">
+							        		<li>
+							        			<a href="#"><i class="fa fa-sort-alpha-asc"></i> A-Z</a>
+							        		</li>
+							        		<li>
+							        			<a href="#"><i class="fa fa-sort-alpha-desc"></i> Z-A</a>
+							        		</li>
+							        	</ul>
+							        </li>
+							        <!-- /.dropdown-section -->
+							        <li role="separator" class="divider"></li>
+							        <li class='dropdown-section dropdown-section__filters-list'>
+							        	<ul class="list-unstyled">
+							        		<li>
+							        			<div class="form-group">
+							        				<input type="checkbox" id="ch1">
+							        				<label for="ch1"><span></span> Checkbox Text</label>
+							        			</div>
+							        		</li>
+							        	</ul>
+							        </li>
+							        <!-- /.dropdown-section -->
+							    </ul>
+							    <!-- /.dropdown-menu Inside table header -->
+							</th>
+							<th class='dropdown'>
+					        	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">FH/PA <i class="fa fa-caret-down"></i></a>
 					        	<ul class="dropdown-menu noclose">
 							        <li class='dropdown-section dropdown-section__sort-order'>
 							        	<ul class="list-unstyled sort-order-list">
@@ -193,10 +277,79 @@
 							    </ul>
 							    <!-- /.dropdown-menu Inside table header -->							
 							</th>
+							<th class='dropdown'>
+					        	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Erinnern am <i class="fa fa-caret-down"></i></a>
+					        	<ul class="dropdown-menu">
+							        <li class='dropdown-section dropdown-section__sort-order'>
+							        	<ul class="list-unstyled sort-order-list">
+							        		<li>
+							        			<a href="#"><i class="fa fa-sort-alpha-asc"></i> A-Z</a>
+							        		</li>
+							        		<li>
+							        			<a href="#"><i class="fa fa-sort-alpha-desc"></i> Z-A</a>
+							        		</li>
+							        	</ul>
+							        </li>
+							        <!-- /.dropdown-section -->
+							    </ul>
+							    <!-- /.dropdown-menu Inside table header -->							
+							</th>
 							<th></th>
 							<th class='dropdown'>
 					        	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Status <i class="fa fa-caret-down"></i></a>
-					        	<ul class="dropdown-menu noclose">
+					        	<ul class="dropdown-menu noclose dropdown-menu-right">
+							        <li class='dropdown-section dropdown-section__sort-order'>
+							        	<ul class="list-unstyled sort-order-list">
+							        		<li>
+							        			<a href="#"><i class="fa fa-sort-alpha-asc"></i> A-Z</a>
+							        		</li>
+							        		<li>
+							        			<a href="#"><i class="fa fa-sort-alpha-desc"></i> Z-A</a>
+							        		</li>
+							        	</ul>
+							        </li>
+							        <!-- /.dropdown-section -->
+							        <li role="separator" class="divider"></li>						        
+							        <li class="dropdown-section dropdown-section__filters-active">
+							        	<ul class="list-inline filter-tag-list">
+							        		<li>
+							        			<a href="#">Some Tag</a>
+							        		</li>
+							        		<li>
+							        			<a href="#">Some Tag</a>
+							        		</li>
+							        		<li>
+							        			<a href="#">Some Tag</a>
+							        		</li>
+							        		<li>
+							        			<a href="#">Some Tag</a>
+							        		</li>
+							        	</ul>
+							        </li>
+							        <!-- /.dropdown-section -->
+				   						        <li role="separator" class="divider"></li>
+				   						        <li class='dropdown-section dropdown-section__filters-list'>
+							        	<ul class="list-unstyled">
+							        		<li>
+							        			<div class="form-group">
+							        				<input type="checkbox" id="ch2">
+							        				<label for="ch2"><span></span> Checkbox Text</label>
+							        			</div>
+							        		</li>
+							        		<li>
+							        			<div class="form-group">
+							        				<input type="checkbox" id="ch3">
+							        				<label for="ch3"><span></span> Checkbox Text</label>
+							        			</div>
+							        		</li>
+							        	</ul>
+							        </li>
+							    </ul>
+							    <!-- /.dropdown-menu Inside table header -->							
+							</th>
+							<th class='dropdown'>
+					        	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Bearbeiter <i class="fa fa-caret-down"></i></a>
+					        	<ul class="dropdown-menu noclose dropdown-menu-right">
 							        <li class='dropdown-section dropdown-section__sort-order'>
 							        	<ul class="list-unstyled sort-order-list">
 							        		<li>
@@ -252,46 +405,47 @@
 						<tr>
 							<td><i class="fa fa-files-o"></i></td>
 							<td>955</td>
-							<td>Staffelprovision Handyversicherung</td>
-							<td>11.02.2016</td>
-							<td>02.03.2016</td>
+							<td><a href="#">Provision Mobilfunk/ Daten</a></td>
+							<td>Anton Antrager</td>
+							<td>PA</td>
+							<td>16.03.2016</td>
+							<td>17.03.2016</td>
+							<td><i class="fa fa-clock-o"></i> 17.03.2016</td>
 							<td class='exclaimation-sign'><i class="fa fa-exclamation-circle"></i></td>
 							<td>
 								<span>Klärung mit Antragsteller erbeten</span> 
-								<span class='dropdown context-dropdown'>
-									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-reorder"></i></a>
-						        	<ul class="dropdown-menu dropdown-menu-right context-menu">
-						        		<li class="dropdown-toggle-inner">
-						        			<a href="#"><i class="fa fa-reorder"></i></a>
-						        		</li>
-								        <li><a href="#">Reklamation öffnen</a></li>
-								        <li role="separator" class="divider"></li>
-								        <li class='disabled'><a href="#">Neu aus Vorlage</a></li>	
-								    </ul>								
-								</span>
 							</td>
+							<td>Bernhard Anstetter</td>
 						</tr>
 						<tr>
-							<td><i class="fa fa-file-o"></i></td>
+							<td><i class="fa fa-files-o"></i></td>
 							<td>955</td>
-							<td>Staffelprovision Handyversicherung</td>
-							<td>11.02.2016</td>
-							<td>02.03.2016</td>
+							<td><a href="#">Provision Mobilfunk/ Daten</a></td>
+							<td>Anton Antrager</td>
+							<td>PA</td>
+							<td>16.03.2016</td>
+							<td>17.03.2016</td>
+							<td><i class="fa fa-clock-o"></i> 17.03.2016</td>
 							<td class='exclaimation-sign'><i class="fa fa-exclamation-circle"></i></td>
 							<td>
 								<span>Klärung mit Antragsteller erbeten</span> 
-								<span class='dropdown context-dropdown'>
-									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-reorder"></i></a>
-						        	<ul class="dropdown-menu dropdown-menu-right context-menu">
-						        		<li class="dropdown-toggle-inner">
-						        			<a href="#"><i class="fa fa-reorder"></i></a>
-						        		</li>
-								        <li><a href="#">Reklamation öffnen</a></li>
-								        <li role="separator" class="divider"></li>
-								        <li class='disabled'><a href="#">Neu aus Vorlage</a></li>	
-								    </ul>								
-								</span>
 							</td>
+							<td>Bernhard Anstetter</td>
+						</tr>
+						<tr>
+							<td><i class="fa fa-files-o"></i></td>
+							<td>955</td>
+							<td><a href="#">Provision Mobilfunk/ Daten</a></td>
+							<td>Anton Antrager</td>
+							<td>PA</td>
+							<td>16.03.2016</td>
+							<td>17.03.2016</td>
+							<td><i class="fa fa-clock-o"></i> 17.03.2016</td>
+							<td class='exclaimation-sign'><i class="fa fa-exclamation-circle"></i></td>
+							<td>
+								<span>Klärung mit Antragsteller erbeten</span> 
+							</td>
+							<td>Bernhard Anstetter</td>
 						</tr>
 					</tbody>
 				</table>
