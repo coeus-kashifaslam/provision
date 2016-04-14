@@ -1,15 +1,22 @@
+#skip-link {
+	display: none;
+}
+.dropdown-menu {
+	@include default-box-shadow();
+}
 .user-dropdown {
-	min-width: 160px;
+	min-width: 145px;
 	margin-bottom: 5px;
 	z-index: 9999;
 	> a {
-		@extend .family-arbd;
+		@extend .family-vdbd;
 		color: $default-font-color;
 		@include transition(none);
-		padding: 7px 12px;
+		padding: 7px 15px;
 		display: block;
 		.fa {
-			margin-left: 35px;
+			margin-left: 10px;
+			font-size: $font-size-small;
 		}
 		&:hover,
 		&:focus,
@@ -22,6 +29,7 @@
 		min-width: 100%;
 		padding-top: 0;
 		padding-bottom: 0;
+		@include default-box-shadow();
 		> li {
 			&:last-child{
 				a {
@@ -29,7 +37,7 @@
 				}
 			}			
 			> a {
-				padding: 15px 20px;
+				padding: 15px;
 				&:hover,
 				&:focus,
 				&:active {
@@ -57,15 +65,22 @@
 		padding: 6px 12px;
 		@include transition(none);
 	}
+	&.open {
+		> a {
+			border: 0 none;
+		}
+	}
 	> .alert-open {
 		display: block;
 	}
 	.dropdown-menu {
 		top: -5px;
+		right: 5px;
 		min-width: 400px;
 		padding: 15px 20px;
 		border-radius: 5px;
-		text-align: left;		
+		text-align: left;
+		@include default-box-shadow();		
 	}
 	.alert-content {
 		padding-top: 30px;

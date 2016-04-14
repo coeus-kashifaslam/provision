@@ -135,14 +135,15 @@ th {
 			@extend .family-arbd;
 			color: $default-font-color;
 			padding: 8px;
-			padding-bottom: 10px;
+			/*padding-bottom: 10px;*/
 			display: block;
 			border-left: 1px solid $white;
 			border-right: 1px solid $white;
-			margin-bottom: -2px;					
+			/*margin-bottom: -2px;*/					
 			.fa {
 				float: right;
 				margin-top: 3px;
+				font-size: $font-size-small;
 			}
 			&:hover,
 			&:focus,
@@ -284,14 +285,24 @@ a.filter-tag {
 	right: -5px;
 	top: -5px;
 	border-radius: 5px;
+	padding: 13px 0;
+	.divider {
+		margin: 0;
+	}
 	> li {
 		> a {
+			padding: 7px 20px;
 			&:hover,
 			&:focus,
 			&:active {
 				background-color: transparent;
 			}
-		}		
+		}
+		&:last-child {
+			a{
+				padding-bottom: 0;
+			}
+		}				
 	}
 	> .dropdown-toggle-inner {
 		position: absolute;
